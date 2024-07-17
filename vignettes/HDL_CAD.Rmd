@@ -1,0 +1,40 @@
+---
+title: "Negative control example: HDL->CAD"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Negative control example: HDL->CAD}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Increased serum HDL levels have been associated with a decreased risk of CAD in observational studies. However, randomized controlled trials have shown no meaningful protective effects of HDL-increasing drugs against CAD in the general population with normal HDL levels. In this study, we will use the Mendelian randomization analysis of HDL on CAD as a negative control example to showcase the utility of MR CORGE.
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+```{r setup}
+library(MRCorge)
+```
+
+
+First, we load the example data included the MRCorge package. Both exposure (HDL) and outcome (CAD) GWAS data were harmonized using the `TwoSampleMR` package. 
+
+```{r}
+data("HDL_CAD")
+head(HDL_CAD)
+```
+
+Next, we use the `mrcorge` function to perform MR analyses based on the core gene hypothesis. Specifically, we use the per-allele effect size (specified with `rank`) to categorize instrument variants into 20 groups (specified with `K`) and perform inverse variance weighted MR (specified with `mr_ivw`) within each group.
+
+```{r}
+res <- mrcorge(HDL_CAD, rank='beta', K=20, method_list = c("mr_ivw"))
+```
+Based on the core instruments, the MR CORGE estimate shows that serum HDL level may not be causally associated with CAD. As we add more peripheral instruments, MR results suggest protective effects of HDL on CAD risk, likely due to horizontal pleiotropy.
+```{r plot1, fig.width=10, fig.height=4}
+plot_mrcorge(res, scale='exp')
+```
