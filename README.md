@@ -8,11 +8,11 @@
 
 ## Overview
 
-Mendelian randomization using polygenic exposures can be significantly biased by horizontal pleiotropy. Built on the core gene hypothesis, we developed MR CORGE to identify putative core instruments that are more likely to affect genes with a direct biological role in exposures to reduce the risk of horizontal pleiotropy.
+Mendelian randomization using polygenic exposures can be significantly biased by horizontal pleiotropy. Built on the core gene hypothesis, we developed MR Corge to identify putative core instruments that are more likely to affect genes with a direct biological role in exposures to reduce the risk of horizontal pleiotropy.
 
 ## Installation
 
-To install the lastest version of MR CORGE:
+To install the lastest version of MR Corge:
 
 ```
 devtools::install_github("zhwm/MRCorge")
@@ -24,7 +24,7 @@ The input of the `mrcorge` function is a harmonized dataframe that works with th
 
 ## Example usage
 
-For detailed examples and usage, see the [vignette](https://zhwm.github.io/MRCORGE/articles/HDL_CAD.html).
+For detailed examples and usage, see the vignette.
 
 
 ## Outputs
@@ -37,4 +37,7 @@ The `mrcorge` function outputs the MR estimates based on core instruments as wel
 
 ## Citation
 
-If you find MR CORGE useful, please cite:
+If you find MR Corge useful, please cite:
+
+[MR Corge: Sensitivity analysis of Mendelian randomization based on the core gene hypothesis for polygenic exposures.](https://doi.org/10.1101/2024.07.18.604191)
+
