@@ -24,7 +24,7 @@ The input of the `mrcorge` function is a harmonized dataframe that works with th
 
 ## Example usage
 
-For detailed examples and usage, see the vignette.
+For detailed examples and usage, see the [vignette](https://zhwm.github.io/MRCorge/).
 
 
 ## Outputs
