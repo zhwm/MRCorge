@@ -3,7 +3,7 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   HDL_CAD: HDL_CAD.html
-last_built: 2024-07-23T02:26Z
+last_built: 2024-07-23T02:43Z
 urls:
   reference: https://zhwm.github.io/MRCorge/reference
   article: https://zhwm.github.io/MRCorge/articles
