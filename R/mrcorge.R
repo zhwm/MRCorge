@@ -29,7 +29,7 @@ mrcorge <- function(harmonized_data, rank = 'beta', K = 5, method_list = c("mr_i
   library(ggplot2)
   library(TwoSampleMR)
   harmonized_data <- subset(harmonized_data, mr_keep & !is.na(se.exposure) & !is.na(eaf.exposure))
-  if (length(harmonized_data)<=K) {
+  if (nrow(harmonized_data)<=K) {
     stop("K should be smaller than the number of candidate instruments in harmonized_data!")
   }
   # Rank instruments based on the chosen metric
