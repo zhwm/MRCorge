@@ -1,0 +1,6 @@
+pandoc: 3.1.11
+pkgdown: 2.1.1
+pkgdown_sha: ~
+articles:
+  HDL_CAD: HDL_CAD.html
+last_built: 2024-10-19T19:15Z
