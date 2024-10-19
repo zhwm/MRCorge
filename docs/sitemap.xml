@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://zhwm.github.io/MRCorge/404.html</loc>
+    <loc>/404.html</loc>
   </url>
   <url>
-    <loc>https://zhwm.github.io/MRCorge/LICENSE-text.html</loc>
+    <loc>/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://zhwm.github.io/MRCorge/articles/HDL_CAD.html</loc>
+    <loc>/articles/HDL_CAD.html</loc>
   </url>
   <url>
-    <loc>https://zhwm.github.io/MRCorge/articles/index.html</loc>
+    <loc>/articles/index.html</loc>
   </url>
   <url>
-    <loc>https://zhwm.github.io/MRCorge/authors.html</loc>
+    <loc>/authors.html</loc>
   </url>
   <url>
-    <loc>https://zhwm.github.io/MRCorge/index.html</loc>
+    <loc>/index.html</loc>
   </url>
   <url>
-    <loc>https://zhwm.github.io/MRCorge/reference/Qstatistic.html</loc>
+    <loc>/reference/Qstatistic.html</loc>
   </url>
   <url>
-    <loc>https://zhwm.github.io/MRCorge/reference/index.html</loc>
+    <loc>/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://zhwm.github.io/MRCorge/reference/mrcorge.html</loc>
+    <loc>/reference/mrcorge.html</loc>
   </url>
   <url>
-    <loc>https://zhwm.github.io/MRCorge/reference/plot_mrcorge.html</loc>
+    <loc>/reference/plot_mrcorge.html</loc>
   </url>
 </urlset>
